@@ -1,7 +1,10 @@
-
+import { Header } from "./components/Header"
 function App() {
   return (
-    <h1>Hellow World!</h1>
+    <>
+      <Header />
+      <h1>Hellow World!</h1>
+    </>
   )
 }
 

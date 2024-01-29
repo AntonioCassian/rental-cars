@@ -1,8 +1,11 @@
-@import 'variables';
-
 * {
     padding: 0;
     margin: 0;
     font-family: 'Helvetica', sans-serif;
     box-sizing: border-box;
+}
+
+:root {
+    --primary-blue-100: #4DD0E1;
+    --secundary: #8263FF;
 }
