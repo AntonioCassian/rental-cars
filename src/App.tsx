@@ -1,6 +1,7 @@
 import { Card } from "./components/Card"
 import { Frame } from "./components/Frame"
 import { Header } from "./components/Header"
+import { Section } from "./components/Section"
 
 function App() {
   return (
@@ -18,13 +19,7 @@ function App() {
           </div>
         </section>
       </div>
-      <section>
-        <div className="container">
-          <div className="car-sec">
-            <img src="" alt="" />
-          </div>
-        </div>
-      </section>
+      <Section />
     </>
   )
 }

@@ -1,0 +1,31 @@
+.frase-img{
+    background-color: #ffffff;
+    margin: 60px 0;
+}
+
+.d-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    gap: 50px;
+}
+
+.p-3{
+    padding: 35px;
+}
+
+.car-sec{
+    width: 531px;
+    img {
+        width: 100%;
+    }
+}
+
+.frase{
+    width: 421px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+}
