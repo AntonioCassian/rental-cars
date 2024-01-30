@@ -4,7 +4,7 @@ import './style.scss'
 export const Frame = () => {
     return (
         <>
-            <section>
+            <section className='frame-sec'>
                 <div className="rounded">
                     <FrameCar />
                 </div>

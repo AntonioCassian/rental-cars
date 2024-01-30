@@ -9,16 +9,22 @@ function App() {
       <div className="container">
         <Frame />
 
-        <section className="">
-          <h3>Carros</h3>
+        <section className="card-sec">
+          <h3 className="title-sec">Carros</h3>
           <div className="container-sec">
             <Card />
-
+            <Card />
+            <Card />
           </div>
-
         </section>
-
       </div>
+      <section>
+        <div className="container">
+          <div className="car-sec">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </section>
     </>
   )
 }
