@@ -1,9 +1,13 @@
+import { Frame } from "./components/Frame"
 import { Header } from "./components/Header"
+
 function App() {
   return (
     <>
       <Header />
-      <h1>Hellow World!</h1>
+      <div className="container">
+        <Frame />
+      </div>
     </>
   )
 }
