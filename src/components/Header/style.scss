@@ -1,3 +1,29 @@
 header {
     background: var(--primary-blue-100);
+
+    .container-main {
+        padding: 15px 154px;
+        color: #fafafa;
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav-left {
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 35px;
+                
+                .link {
+                    color: #fafafa;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: var(--secundary-lilas-200);
+                    }
+                }
+            }
+        }
+    }
 }
