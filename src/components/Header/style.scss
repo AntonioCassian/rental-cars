@@ -4,6 +4,7 @@ header {
     .container-main {
         padding: 15px 154px;
         color: #fafafa;
+
         .nav {
             display: flex;
             justify-content: space-between;
@@ -14,7 +15,7 @@ header {
                 align-items: center;
                 justify-content: space-between;
                 gap: 35px;
-                
+
                 .link {
                     color: #fafafa;
                     text-decoration: none;
@@ -22,7 +23,16 @@ header {
                     &:hover {
                         color: var(--secundary-lilas-200);
                     }
+
                 }
+                .active {
+                    color: var(--secundary-lilas-200);
+                }
+            }
+
+            .nav-right{
+                font-size: 20px;
+                cursor: pointer;
             }
         }
     }

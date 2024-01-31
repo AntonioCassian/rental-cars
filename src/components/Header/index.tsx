@@ -1,24 +1,33 @@
 import { Logo } from "../../assets/Logo";
 import { FaUser } from 'react-icons/fa'
 import './style.scss'
+import { Link, useLocation } from "react-router-dom";
 
 export const Header = () => {
-    return(
+    const links = [
+        { name: <Logo />, path: '' },
+        { name: 'Home', path: '/' },
+        { name: 'Toyota', path: '/toyota' },
+        { name: 'Volkswage', path: '/volkswage' },
+        { name: 'Fiat', path: '/fiat' },
+        { name: 'Chevrolet', path: '/chevrolet' },
+        { name: 'Hiunday', path: '/hiunday' }
+    ]
+    const {pathname} = useLocation();
+    return (
         <>
             <header>
                 <div className="container-main">
-                    <nav className="nav">
-                        <div className="nav-left">
-                            <a href="#" className="link"><Logo /></a>
-                            <a href="#" className="link">Home</a>
-                            <a href="#" className="link">Toyota</a>
-                            <a href="#" className="link">Volkswage</a>
-                            <a href="#" className="link">Fiat</a>
-                            <a href="#" className="link">Chevrolet</a>
-                            <a href="#" className="link">Hiunday</a>
-                        </div>
-                        <div className="nav-rigt"><FaUser /></div>
-                    </nav>
+                    <ul className="nav">
+                        <li className="nav-left">
+                            {links.map((item, index) => (
+                                <Link to={item.path} className={pathname === item.path ? "active" : "link"} key={index}>
+                                    {item.name}
+                                </Link>
+                            ))}
+                        </li>
+                        <div className="nav-right"><FaUser /></div>
+                    </ul>
                 </div>
             </header>
         </>
