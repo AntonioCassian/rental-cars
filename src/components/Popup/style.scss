@@ -1,0 +1,50 @@
+.popup {
+    background: var(--primary-blue-100);
+    color: #fff;
+    padding: 20px;
+    width: 50%;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+
+    .popup-inner {
+
+        .pop-close {
+            display: inline-flex;
+            justify-content: end;
+            cursor: pointer;
+        }
+
+        .pop-text {
+            font-size: 20px;
+            text-align: center;
+            margin: 16px 0;
+        }
+
+        .pop-foo {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 40px;
+
+            input {
+                width: 100%;
+                outline: none;
+                border-radius: 16px;
+                padding: 10px 12px;
+                border: none;
+            }
+
+            button {
+                background: var(--secundary-lilas-200);
+                border: none;
+                color: #fff;
+                padding: 7px 20px;
+                font-size: 15px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
+    }
+}
