@@ -1,0 +1,15 @@
+.card-sec {
+    margin-top: 90px;
+
+    .title-sec {
+        margin-bottom: 45px;
+    }
+}
+
+.container-sec {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0px 12px;
+}
