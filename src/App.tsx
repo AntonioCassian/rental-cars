@@ -1,4 +1,5 @@
 import { Card } from "./components/Card"
+import { Footer } from "./components/Footer"
 import { Frame } from "./components/Frame"
 import { Header } from "./components/Header"
 import { Section } from "./components/Section"
@@ -20,6 +21,7 @@ function App() {
         </section>
       </div>
       <Section />
+      <Footer />
     </>
   )
 }
