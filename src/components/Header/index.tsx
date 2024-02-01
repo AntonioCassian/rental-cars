@@ -1,9 +1,20 @@
-import { Logo } from "../../assets/Logo";
-import { FaUser } from 'react-icons/fa'
-import './style.scss'
 import { Link, useLocation } from "react-router-dom";
+import { FaUser } from 'react-icons/fa'
+
+import { Logo } from "../../assets/Logo";
+import { Popup } from "../Popup";
+
+import { useState } from "react";
+import './style.scss'
 
 export const Header = () => {
+    const {pathname} = useLocation();
+    const [open, setOpen] = useState(false);
+
+    const handlerPop = () => {
+        return setOpen(true)
+    }
+
     const links = [
         { name: <Logo />, path: '' },
         { name: 'Home', path: '/' },
@@ -13,10 +24,11 @@ export const Header = () => {
         { name: 'Chevrolet', path: '/chevrolet' },
         { name: 'Hiunday', path: '/hiunday' }
     ]
-    const {pathname} = useLocation();
+
     return (
         <>
             <header>
+                {open && <Popup close={setOpen} />}
                 <div className="container-main">
                     <ul className="nav">
                         <li className="nav-left">
@@ -26,7 +38,7 @@ export const Header = () => {
                                 </Link>
                             ))}
                         </li>
-                        <div className="nav-right"><FaUser /></div>
+                        <div className="nav-right" onClick={handlerPop}><FaUser /></div>
                     </ul>
                 </div>
             </header>
