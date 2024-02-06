@@ -5,6 +5,7 @@ import { Toyota } from "./Pages/Toyota";
 import { Volkswagen } from "./Pages/Vowksvagen";
 import { Fiat } from "./Pages/Fiat";
 import { Chevrolet } from "./Pages/Chevrolet";
+import { Hyundai } from "./Pages/Hyundai";
 
 export const Routs = () => {
     return (
@@ -16,6 +17,7 @@ export const Routs = () => {
                 <Route path="/volkswage"  element={<Volkswagen />} />
                 <Route path="/fiat"  element={<Fiat />} />
                 <Route path="/chevrolet"  element={<Chevrolet />} />
+                <Route path="/Hyundai"  element={<Hyundai />} />
             </Routes>
         </Router>
     )

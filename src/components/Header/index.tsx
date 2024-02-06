@@ -19,10 +19,10 @@ export const Header = () => {
         { name: <Logo />, path: '/' },
         { name: 'Home', path: '/' },
         { name: 'Toyota', path: '/toyota' },
-        { name: 'Volkswage', path: '/volkswage' },
+        { name: 'Volkswagen', path: '/volkswage' },
         { name: 'Fiat', path: '/fiat' },
         { name: 'Chevrolet', path: '/chevrolet' },
-        { name: 'Hiunday', path: '/hiunday' }
+        { name: 'Hyundai', path: '/hyundai' }
     ]
 
     return (
