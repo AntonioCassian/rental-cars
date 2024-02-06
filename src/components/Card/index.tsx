@@ -10,7 +10,7 @@ export const Card = ( props: Car ) => {
                 <div className="image-card">
                     <p className='title-card'>{props.modelo} - {props.nome}</p>
                     <img src={props.image} />
-                    <span>R$ {props.valor}</span>
+                    <span>R$ {props.valor.toFixed(2).replace('.', ',')}</span>
                 </div>
 
                 <button className='btn'>
