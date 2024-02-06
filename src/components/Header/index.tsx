@@ -16,7 +16,7 @@ export const Header = () => {
     }
 
     const links = [
-        { name: <Logo />, path: '' },
+        { name: <Logo />, path: '/' },
         { name: 'Home', path: '/' },
         { name: 'Toyota', path: '/toyota' },
         { name: 'Volkswage', path: '/volkswage' },

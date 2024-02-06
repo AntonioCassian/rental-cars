@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { Descriton } from "./Pages/Descrition";
-import { Cars } from "./Pages/Cars";
+import { Toyota } from "./Pages/Toyota";
 
 export const Routs = () => {
     return (
@@ -9,7 +9,7 @@ export const Routs = () => {
             <Routes>
                 <Route path="/"  element={<Home/>} />
                 <Route path="/des"  element={<Descriton />} />
-                <Route path="/cars"  element={<Cars />} />
+                <Route path="/toyota"  element={<Toyota />} />
             </Routes>
         </Router>
     )
