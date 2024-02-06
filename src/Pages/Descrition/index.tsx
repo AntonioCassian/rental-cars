@@ -17,6 +17,14 @@ export const Descriton = () => {
                     <label htmlFor="volta">Data de volta</label>
                     <input type="date" name="" id="volta" />
 
+                    <div className="result">
+                        <div className="res">
+                            50,00
+                        </div>
+                        <div className="res">
+                            500,00
+                        </div>
+                    </div>
                     <button className="btn">
                         Alugar
                     </button>
