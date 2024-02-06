@@ -3,32 +3,37 @@
     padding: 15px 10px;
     height: 420px;
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
     
-    .image-card {
-        width: 275px;
+    .linkCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        text-decoration: none;
+        color: #010101;
         
-        .title-card {
-            font-size: 20px;
-            font-weight: 700;
-            padding-bottom: 15px;
-        }
-        
-        img {
-            width: 100%;
-            padding-bottom: 15px;
-        }
-        
-        span {
-            font-size: 16px;
-            font-weight: bold;
+        .image-card {
+            width: 275px;
+
+            .title-card {
+                font-size: 20px;
+                font-weight: 700;
+                padding-bottom: 15px;
+            }
+
+            img {
+                width: 100%;
+                padding-bottom: 15px;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: bold;
+            }
         }
     }
-    
+
     .btn {
         background: var(--secundary-lilas-200);
         border: none;
