@@ -17,7 +17,7 @@
             margin-top: 12px;
         }
 
-        input {
+        .inp-dat {
             width: 100%;
             outline: none;
             border: none;
@@ -25,7 +25,7 @@
             border-radius: 35px;
         }
 
-        .result{
+        .result {
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -36,6 +36,19 @@
                 padding: 20px;
                 font-size: 17px;
                 font-weight: 700;
+            }
+
+            input[type=number]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+
+            }
+
+            input[type=number] {
+                -moz-appearance: textfield;
+                appearance: textfield;
+                outline: none;
+                border: none;
+                width: 100px;
             }
         }
 
