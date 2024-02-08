@@ -3,63 +3,103 @@
     display: flex;
     justify-content: space-between;
 
-    form {
-        width: 30%;
-        text-align: center;
+    .d-flex-col {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
+        width: 25%;
 
-        label {
-            font-size: 12px;
-            font-weight: bold;
-            margin-bottom: 8px;
-            margin-top: 12px;
-        }
-
-        .inp-dat {
-            width: 100%;
-            outline: none;
-            border: none;
-            padding: 12px;
-            border-radius: 35px;
-        }
-
-        .result {
+        form {
+            text-align: center;
             display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 18px 18px 0;
+            flex-direction: column;
+            align-items: center;
 
-            .res {
-                background-color: #fff;
-                padding: 20px;
-                font-size: 17px;
-                font-weight: 700;
+            label {
+                font-size: 12px;
+                font-weight: bold;
+                margin-bottom: 8px;
+                margin-top: 12px;
             }
 
-            input[type=number]::-webkit-inner-spin-button {
+            .inp-dat {
+                width: 100%;
+                outline: none;
+                border: none;
+                padding: 12px;
+                border-radius: 35px;
+            }
+
+            .result {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 18px 18px 0;
+
+                .res {
+                    background-color: #fff;
+                    padding: 20px;
+                    font-size: 17px;
+                    font-weight: 700;
+                }
+
+            }
+
+            .iptn[type=number]::-webkit-inner-spin-button {
                 -webkit-appearance: none;
 
             }
 
-            input[type=number] {
+            .iptn[type=number] {
                 -moz-appearance: textfield;
                 appearance: textfield;
                 outline: none;
                 border: none;
                 width: 100px;
             }
+
+            .btn {
+                background: var(--secundary-lilas-200);
+                border: none;
+                color: #fff;
+                padding: 7px 20px;
+                font-size: 23px;
+                font-weight: 700;
+                margin-top: 15px;
+            }
         }
 
-        .btn {
-            background: var(--secundary-lilas-200);
-            border: none;
-            color: #fff;
-            padding: 7px 20px;
-            font-size: 23px;
-            font-weight: 700;
-            margin-top: 15px;
+        .form-cartao {
+            text-align: start;
+            
+            .label-cartao {
+                font-size: 11px;
+            }
+
+            .inpt-cartao {
+                padding: 8px 13px;
+                font-size: 14px;
+                width: 100% !important;
+            }
+
+            .iptn-n {
+                outline: none;
+                padding: 8px 13px;
+                font-size: 14px;
+                width: 100%;
+                border: none;
+            }
+            
+            .valid-cvv {
+                display: flex;
+                margin-top: 15px;
+
+                input {
+                    padding: 8px 13px;
+                    font-size: 14px;
+                }
+            }
         }
     }
+
 }
