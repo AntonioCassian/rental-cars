@@ -29,18 +29,21 @@
                 padding: 12px;
                 border-radius: 35px;
             }
-
+            
             .result {
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
                 padding: 18px 18px 0;
-
+                
                 .res {
                     background-color: #fff;
                     padding: 20px;
                     font-size: 17px;
                     font-weight: 700;
+                    outline: none;
+                    border: none;
+                    width: 47%;
                 }
 
             }
